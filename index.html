@@ -8,11 +8,13 @@
   </head>
   <h2 class="title">Mission 5000</h2>
   <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
     <div class="background">
       <div class="calculator">
         <form>
           <div class="display">
-            <input type="text" name="display" />
+            <input type="text" name="display" value="" id="display" />
           </div>
           <div>
             <input type="button" value="On" />
@@ -21,9 +23,9 @@
             <input type="button" value="/" />
           </div>
           <div>
-            <input type="button" value="7" />
-            <input type="button" value="8" />
-            <input type="button" value="9" />
+            <input type="button" value="7" onClick="numberClick(7)" />
+            <input type="button" value="8" onClick="numberClick(8)" />
+            <input type="button" value="9" onClick="numberClick(9)" />
             <input type="button" value="*" />
           </div>
           <div>
